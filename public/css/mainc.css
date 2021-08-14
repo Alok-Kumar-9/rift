@@ -1,0 +1,61 @@
+body {
+  background-color: gainsboro;
+}
+
+.item-adder {
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inp {
+  font-size: 11px;
+  height: 4vh;
+}
+
+#head {
+  text-align: center;
+  color: brown;
+}
+
+#lista {
+  text-align: center;
+  font-size: 18px;
+}
+
+#itema {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#finall {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.btnu {
+  font-size: 15px;
+  height: 6vh;
+}
+
+#lastt {
+  text-align: center;
+}
+
+#logout {
+  margin-top: 5px;
+  margin-bottom: 0;
+  height: 12vh;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+#write {
+  line-height: 9vh;
+  text-align: left;
+}

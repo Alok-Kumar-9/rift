@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/otp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-content">
+        <form action="/finalregister" method="post">
+            <p>
+                <input type="number" name="mobile" id="mobile" readonly="readonly" placeholder={{mobile}}/>
+            </p>
+            <p>
+                <input type="password" name="otp" id="otp" placeholder="Enter the otp" required/>
+            </p>
+            <p class="btnn">
+                <button type="submit">Verify</button>
+            </p>
+        </form>
+    </div>
+    <script>
+        let userMob = "{{mobile}}" ;
+        document.getElementById("mobile").value = userMob;
+    </script>
+</body>
+</html>

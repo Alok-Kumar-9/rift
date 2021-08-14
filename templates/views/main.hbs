@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>btpcss}}
+    <link rel="stylesheet" href="css/mainc.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="item-adder">
+        <p>
+            <input class="inp" type="text" name="item" id="item" placeholder="Enter Your Item" required />
+        </p>
+        <p>
+            <input class="inp" type="text" name="quantity" id="quantity" placeholder="Enter Quantity" required />
+        </p>
+        <p>
+            <button class="inp" type="submit" id="addItem">Add</button>
+        </p>
+    </div>
+    <hr />
+    <h3 id="head">Your Current items</h3>
+    <br />
+    <div id="itema">
+        <p id="lista">
+            <ul id="listt">
+
+            </ul>
+        </p>
+    </div>
+    <div id="finall">
+        <p id="lastt">
+            <button class="btnu" type="submit" id="sendData">Place Order</button>
+        </p>
+    </div>
+    <div id="alertPlace">
+        
+    </div>
+    <div id="logout">
+        <p id="write">
+            <a href="/">LOGOUT</a>
+        </p>
+    </div>
+    <script>
+        let mobilee = "{{mobile}}";
+    </script>
+    {{>btpjs}}
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="js/add.js"></script>
+</body>
+</html>
